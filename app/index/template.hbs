@@ -1,1 +1,18 @@
-{{outlet}}
+{{#each model as |app|}}
+
+  <div class="app-container">
+    <div class="log">
+      <p class="log__date">
+        {{app}}
+      </p>
+      <p class="log__timer">
+      </p>
+    </div>
+
+  </div>
+{{/each}}
+<p class="links">
+  {{#link-to "new-run"}}
+    <button class="add-button" type="button" name="add">+</button>
+  {{/link-to}}
+</p>

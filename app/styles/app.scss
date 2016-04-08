@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'box-sizing';
+@import 'new-run';
 
 * {
   font-family: Roboto;
@@ -24,9 +25,9 @@ body {
   margin-left: 1rem;
 }
 
-// .app-container {
-//
-// }
+.app-container {
+  margin: auto;
+}
 
 .log {
   display: flex;
@@ -36,7 +37,6 @@ body {
 }
 
 .add-button {
-  display: flex;
   justify-content: flex-end;
   align-content: flex-end;
   background: $button-green;
