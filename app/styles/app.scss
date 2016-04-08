@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'box-sizing';
+
+* {
+  font-family: Roboto;
+}
+
+body {
+  background: #282828;
+  max-width: 1080px;
+  max-height: 1960px;
+
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  background:$header-bar-blue;
+  color: $title-white;
+  font-size: $base-font-size;
+}
+
+#title {
+  margin-left: 1rem;
+}
+
+// .app-container {
+//
+// }
+
+.log {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  color: $regular-text;
+}
+
+.add-button {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  background: $button-green;
+  border-radius: 50%;
+}
