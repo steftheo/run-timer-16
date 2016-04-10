@@ -11,6 +11,7 @@
   flex-direction: column;
   list-style: none;
   margin: 0 auto;
+  max-width: 1080px;
 }
 
 .form-input__boxes {
@@ -18,14 +19,22 @@
   padding-bottom: $base-line-height;
   margin-bottom: 2rem;
   color: $placeholder-text;
+  max-width: 20rem;
+}
+
+.form__buttons {
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .form-button__cancel {
   background: $button-grey;
   text-decoration-color: $button-text-grey;
+  margin-left: 2.5rem;
 }
 
 .form-button__submit {
   background: $button-green;
   text-decoration-color: $button-text-grey;
+  margin-left: 13.5rem;
 }
