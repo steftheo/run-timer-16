@@ -1,9 +1,12 @@
 <h2 class="new__title">New Run</h2>
-<form action addNewRun on="submit">
+<form {{action submitRun on="submit"}}>
   <ul class="form-inputs">
-    <li class="form-input__boxes">Run Time</li>
-    <li class="form-input__boxes">Race Date</li>
-    <li class="form-input__boxes">Race Notes</li>
+    <p class="form-input__header">Run Time</p>
+    <input type="text" class="form-input__boxes">
+    <p class="form-input__header">Run Date</p>
+    <input type="text" class="form-input__boxes">
+    <p class="form-input__header">Race Notes</p>
+    <input type="text" class="form-input__boxes">
   </ul>
   <div class="form__buttons">
     <button class="form-button__cancel" type="button" name="Cancel">Cancel</button>
