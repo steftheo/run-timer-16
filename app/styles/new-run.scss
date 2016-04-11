@@ -1,17 +1,15 @@
 @import 'variables';
-@import 'box-sizing';
 
 .new__title {
   color: $title-white;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .form-inputs {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 0 auto;
-  max-width: 1080px;
+  margin-left: -1rem;
 }
 
 .form-input__boxes {
@@ -37,7 +35,8 @@
 .form-button__cancel {
   background: $button-grey;
   text-decoration-color: $button-text-grey;
-  margin-left: 2.5rem;
+  margin-left: 1.3rem;
+
 }
 
 .form-button__submit {
