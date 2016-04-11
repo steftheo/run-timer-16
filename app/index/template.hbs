@@ -2,9 +2,7 @@
   {{#each model as |app|}}
     <div class="listOfRuns">
       <p class="listOfRuns__date">{{app.date}}</p>
-      <p class="listOfRuns__timer">
-        {{app.time}}
-      </p>
+      <p class="listOfRuns__timer">{{app.time}}</p>
     </div>
   {{/each}}
 </div>
@@ -12,7 +10,7 @@
 <footer>
   <p class="links">
     {{#link-to "new-run"}}
-      <button class="add-button" type="button" name="add">+</button>
+      <button class="add-button" type="button" name="add"><i class="fa fa-plus"></i></button>
     {{/link-to}}
   </p>
 </footer>
