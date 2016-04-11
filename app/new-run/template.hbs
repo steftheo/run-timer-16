@@ -1,15 +1,15 @@
 <h2 class="new__title">New Run</h2>
 <form {{action submitRun on="submit"}}>
   <ul class="form-inputs">
-    <p class="form-input__header">Run Time</p>
-    <input type="text" class="form-input__boxes">
-    <p class="form-input__header">Run Date</p>
-    <input type="text" class="form-input__boxes">
-    <p class="form-input__header">Race Notes</p>
-    <input type="text" class="form-input__boxes">
+    {{input type="text" value=time class="form-input__boxes" placeholder="Run Time"}}
+    {{input type="date" value=date class="form-input__boxes" placeholder="Race Date"}}
+    {{input type="text" value=notes class="form-input__boxes" placeholder="Race Notes"}}
   </ul>
+
   <div class="form__buttons">
-    <button class="form-button__cancel" type="button" name="Cancel">Cancel</button>
+    {{#link-to 'index'}}
+      <button class="form-button__cancel">Cancel</button>
+    {{/link-to}}
     <button class="form-button__submit">Submit</button>
   </div>
 </form>

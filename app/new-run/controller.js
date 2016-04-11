@@ -3,9 +3,9 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   submitRun() {
     const attributes = {
-    time: this.time,
-    date: this.date,
-    notes: this.notes,
+      time: this.time,
+      date: this.date,
+      notes: this.notes,
   };
 
     fetch(`http://tiny-tn.herokuapp.com/collections/runs-st`, {
