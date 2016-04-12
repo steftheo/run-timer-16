@@ -9,9 +9,19 @@
 body {
   background: #282828;
   max-width: 1080px;
-  max-height: 1960px;
 
   margin: 0 auto;
+}
+
+.application {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  flex-grow: 1;
 }
 
 .top-nav {
@@ -48,10 +58,10 @@ body {
 
 .add-button {
   float: right;
-  margin-right: 1.5rem;
+  margin: 1.5rem;
   background: $button-green;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border: none;
 }
