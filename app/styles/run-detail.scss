@@ -1,0 +1,27 @@
+@import 'variables';
+
+.run-detail__title {
+  color: $title-white;
+  padding-left: 0.5rem;
+}
+
+.run-detail__data {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.run-detail__date {
+  color: $regular-text;
+  font-size: $base-font-size;
+}
+
+.run-detail__time {
+  color: $green-text;
+}
+
+.run-detail__notes {
+  color: $regular-text;
+  padding-left: 0.5rem;
+}
