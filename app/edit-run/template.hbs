@@ -1,0 +1,15 @@
+<h2 class="new__title">Edit Run</h2>
+<form {{action editRun on="submit"}}>
+  <ul class="form-inputs">
+    {{input type="text" value=time class="form-input__boxes" placeholder="Run Time"}}
+    {{input type="date" value=date class="form-input__boxes" placeholder="Race Date"}}
+    {{input type="text" value=notes class="form-input__boxes" placeholder="Race Notes"}}
+  </ul>
+
+  <div class="form__buttons">
+    {{#link-to 'index'}}
+      <button class="form-button__cancel">Cancel</button>
+      <button class="form-button__submit">Submit</button>
+    {{/link-to}}
+  </div>
+</form>

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  submitRun() {
+  editRun() {
     const attributes = {
       time: this.time,
       date: this.date,
@@ -17,13 +17,7 @@ export default Ember.Controller.extend({
       body: JSON.stringify(attributes),
     }).then((res) => res.json())
     .then((run) => {
-      this.transitionToRoute(`index`);
-      this.clearRunForm();
+      this.transitionToRoute(`run-detail`);
     });
-  },
-  clearRunForm() {
-    this.set(`time`, ``);
-    this.set(`date`, ``);
-    this.set(`notes`, ``);
   },
 });
