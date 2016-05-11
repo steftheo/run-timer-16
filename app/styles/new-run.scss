@@ -8,18 +8,22 @@
 .form-inputs {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   list-style: none;
   margin-left: -1rem;
 }
 
 .form-input__boxes {
-  border: none;
+  display: flex;
+  border: 0;
+  margin-left: -0.5rem;
+  margin-right: 1rem;
   border-bottom: 1px solid $placeholder-text;
   padding-bottom: $base-line-height;
   margin-bottom: 1rem;
   color: $placeholder-text;
-  max-width: 20rem;
   background: none;
+
 }
 
 .form-input__header {
@@ -29,19 +33,28 @@
 
 .form__buttons {
   justify-content: space-between;
-  margin: 0 auto;
-  white-space: none;
+  margin: 0;
 }
 
 .form-button__cancel {
   background: $button-grey;
   text-decoration-color: $button-text-grey;
   margin-left: 1.3rem;
-
+  white-space: none;
+  border: 0;
+  width: 4rem;
+  height: 2rem;
+  float: left;
 }
 
 .form-button__submit {
   background: $button-green;
   text-decoration-color: $button-text-grey;
   margin-left: 13.5rem;
+  margin-right: 1.3rem;
+  white-space: none;
+  border: 0;
+  width: 4rem;
+  height: 2rem;
+  float: right;
 }
