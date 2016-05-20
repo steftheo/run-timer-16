@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
     };
 
     fetch(`http://tiny-tn.herokuapp.com/collections/runs-st/${this.model._id}`, {
-      method: `POST`,
+      method: `PUT`,
       headers: {
         Accept: `application/json`,
         'Content-Type': `application/json`,
@@ -17,7 +17,7 @@ export default Ember.Controller.extend({
       body: JSON.stringify(attributes),
     }).then((res) => res.json())
     .then((run) => {
-      this.transitionToRoute(`run-detail`);
+      this.transitionToRoute(`run-detail`, run._id);
     });
   },
 });

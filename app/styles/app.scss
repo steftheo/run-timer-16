@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+button,
+input {
+  outline: none;
+}
+
 .application {
   display: flex;
   flex-direction: column;
