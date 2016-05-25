@@ -1,0 +1,19 @@
+<div class="app-container">
+  {{#each model as |app|}}
+  {{#link-to "run-detail" app._id}}
+    <div class="listOfRuns">
+      <p class="listOfRuns__date">{{app.date}}</p>
+      <p class="listOfRuns__timer">{{app.time}}</p>
+      {{log app}}
+    </div>
+  {{/link-to}}
+  {{/each}}
+</div>
+
+<footer>
+  <p class="links">
+    {{#link-to "new-run"}}
+      <button class="add-button" type="button" name="add"><i class="fa fa-plus"></i></button>
+    {{/link-to}}
+  </p>
+</footer>

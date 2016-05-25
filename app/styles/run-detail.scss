@@ -1,0 +1,54 @@
+@import 'variables';
+
+.run-detail__title {
+  color: $title-white;
+  padding-left: 0.5rem;
+}
+
+.run-detail__data {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.run-detail__date {
+  color: $regular-text;
+  font-size: $base-font-size;
+}
+
+.run-detail__time {
+  color: $green-text;
+}
+
+.run-detail__notes {
+  color: $regular-text;
+  padding-left: 0.5rem;
+}
+
+.app-container {
+  flex-grow: 1;
+}
+
+.run-detail__back {
+  margin: 1.5rem;
+  background: $button-grey;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+}
+
+.run-detail__edit {
+  float: right;
+  margin: 1.5rem;
+  background: $button-green;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+}
+
+.fa-pencil {
+  color: $title-white;
+}
