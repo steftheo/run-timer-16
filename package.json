@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "deploy": "ember build && surge dist sct-run-timer.surge.sh"
+    "deploy": "ember build && surge . sct-run-timer.surge.sh"
   },
   "repository": "",
   "engines": {
